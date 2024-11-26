@@ -1,0 +1,26 @@
+id,sub_id,key,value
+1,0,story_temperature_by_location
+1,1,step,intent|ask_temperature_by_location
+1,2,step,action|action|action_temperature_by_location
+,,,
+2,0,rule,rule_test
+2,1,step,intent|intent_test
+2,2,step,action|response|utter_test_response
+,,,
+0,1,response,utter_temperature_by_location
+,,,
+0,2,entity,ask_temperature_by_location
+0,2,nlu|regex,location
+,,,
+0,2,example,^[A-Za-z]+$
+1,1,example,what is the temperature in [New York](location)
+1,1,example,I want the temperature for [Toronto](location)
+1,1,example,Get the temperature for [San Francisco](location)
+1,1,example,Temperature in the city of [London](location)
+1,1,example,Tell me the temperature in [Canada](location)
+2,1,example,Example 1
+2,1,example,Example 2
+,,,
+0,1,response_content,"temperature_by_location, value={location}"
+2,2,response_content,Response 1
+2,2,response_content,Response 2
