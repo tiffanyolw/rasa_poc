@@ -61,7 +61,7 @@ def train_from_csv():
 
     groupings = df.groupby(ID)
     for group_id, group in groupings:
-        behaviour = {} # A story pr rule
+        behaviour = {} # A story or rule
         steps = []
 
         sub_groupings = group.groupby(SUB_ID)
@@ -206,6 +206,6 @@ def train_from_csv():
 # Convert the Python object to YAML
 def __str_presenter__(dumper, data_str):
     if len(data_str.splitlines()) > 1: # Check for multi-line string
-        return dumper.represent_scalar('tag:yaml.org,2002:str', data_str, style="|")
+        return dumper.represent_scalar('tag:yaml.org,2002:str', data_str, style='|')
     return dumper.represent_scalar('tag:yaml.org,2002:str', data_str)
 
