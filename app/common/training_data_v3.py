@@ -75,7 +75,7 @@ def train_from_csv():
                 if key == STORY or key == RULE:
                     behaviour = {key: value}
 
-                elif key = STEP:
+                elif key == STEP:
                     value_arr = value.split(SEPARATOR)
                     count = len(value_arr)
                     step = {}
