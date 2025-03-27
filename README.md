@@ -32,7 +32,7 @@ python training.py
 ## Flask App
 Navigate to `app` folder
 ```bash
-cd .../app
+cd ./app
 ```
 
 Start the Flask app by running `app.py`
