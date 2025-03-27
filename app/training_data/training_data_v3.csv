@@ -1,5 +1,5 @@
 id,sub_id,key,value
-1,0,story_temperature_by_location
+1,0,story,story_temperature_by_location
 1,1,step,intent|ask_temperature_by_location
 1,2,step,action|action|action_temperature_by_location
 ,,,
@@ -12,7 +12,7 @@ id,sub_id,key,value
 0,2,entity,ask_temperature_by_location
 0,2,nlu|regex,location
 ,,,
-0,2,example,^[A-Za-z]+$
+0,2,example,^[A-Za-z ]+$
 1,1,example,what is the temperature in [New York](location)
 1,1,example,I want the temperature for [Toronto](location)
 1,1,example,Get the temperature for [San Francisco](location)
