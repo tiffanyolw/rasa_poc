@@ -44,7 +44,7 @@ python app.py
 Send a request to the Flask app.
 Example Request:
 ```bash
-curl -i -X POST -H "Content-Type application/json" -d "{\"message\" : \"what is the tempertature in New York\"}" http://127.0.0.1:5000/rasa
+curl -i -X POST -H "Content-Type: application/json" -d "{\"message\" : \"what is the tempertature in New York\"}" http://127.0.0.1:5000/rasa
 ```
 Example Response:
 ```bash
