@@ -99,4 +99,4 @@ nlu:
 
 - regex: location
   examples: |
-    - ^[A-Za-z]+$
+    - ^[A-Za-z ]+$
